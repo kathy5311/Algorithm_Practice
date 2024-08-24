@@ -1,0 +1,5 @@
+#11021
+a,b=int(input().split()) -> 올바르지 못한 표현
+c = a+b
+=> a,b=(input().split()) -> 바른 표현
+    c = int(a)+int(b) 
