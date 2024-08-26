@@ -1,14 +1,19 @@
 #리스트 크기 정해주기
 #다시 해보기
-(n),m = input().split()
-a=[]
-for i in range(1, int(n)+1):
-   a.append(i)
-copy_a=a.copy()
-for j in range(int(m)):
-    b,c = input().split() 
-    a[int(b)-1]=copy_a[int(c)-1]
-    a[int(c)-1]=copy_a[int(b)-1]
-    
-    #print(copy_a)
-print(a)
+import sys
+n,m = map(int,sys.stdin.readline().split())
+a=[i for i in range(1,n+1)]
+
+copy_a=a[:]
+for j in range(m):
+    b,c = map(int,sys.stdin.readline().split())
+    a[b-1]=copy_a[c-1]
+    a[c-1]=copy_a[b-1]
+    copy_a=a[:]
+    #print(copy_a) 
+for i in a:
+    print(i, end=' ')
+'''
+a,b,c,d,e = [i for i in a]
+print(a,b,c,d,e)
+'''

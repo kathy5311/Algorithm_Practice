@@ -3,3 +3,34 @@ a,b=int(input().split()) -> 올바르지 못한 표현
 c = a+b
 => a,b=(input().split()) -> 바른 표현
     c = int(a)+int(b) 
+
+#10813
+problem1.
+input()은 run time error 발생
+-> sys.stdin.readline() 
+입력 시 한 줄 정도는 input()사용해도 무방
+단, 반복적으로 입력을 받을 때 문제
+
+problem2.
+순차적으로 리스트에 있는 값을 출력해야 할 때는 아래와 같이!
+정답 코드.
+for i in a:
+    print(i, end=' ')
+
+오류 예시.
+'''
+a,b,c,d,e = [i for i in a]
+print(a,b,c,d,e)
+'''
+런타임에러 발생
+
+sys.stdin.readline() 참고 문헌
+https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5-%EC%A0%95%EB%A6%ACsys.stdin.readline
+
+#5597
+인덱스 원소 제거 방법
+1. a.pop(index)
+2. del a[index]
+3. a.remove(value)
+4. a.clear() ->리스트 초기화
+
