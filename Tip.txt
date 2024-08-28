@@ -34,3 +34,7 @@ https://velog.io/@yeseolee/Python-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%85%EB%A0%A5
 3. a.remove(value)
 4. a.clear() ->리스트 초기화
 
+#10811
+temp를 이용해보자
+->10813도 더 잘 풀릴수도?
+
