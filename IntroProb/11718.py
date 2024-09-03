@@ -1,5 +1,5 @@
 import sys
 
-input = sys.stdin.read()
-
-print(input)
+input = sys.stdin.readlines()
+for i in input:
+    print(i.rstrip())
