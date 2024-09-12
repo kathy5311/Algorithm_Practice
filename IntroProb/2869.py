@@ -6,3 +6,4 @@ n=(V-A)/(A-B)
 if (V-A)%(A-B)!=0:
     n=int(n)+1
 print(int(n+1))
+#0913
