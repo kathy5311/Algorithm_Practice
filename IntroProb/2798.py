@@ -1,24 +1,20 @@
-#브루트포스 공부
+from itertools import combinations
 import sys
 
-N, M = list(map(int, sys.stdin.readline().split()))
-
+N,M = list(map(int, sys.stdin.readline().split()))
 
 a = list(map(int, sys.stdin.readline().split()))
 
-a.sort()
-a.reverse()
-print(a)
+com=(list(combinations(a,3)))
+
 new_list=[]
-for i in range(N):
+for i in com:
     total=0
-    if i == len(a)-2:
-        break
-    for j in range(i,i+2):
-        for k in range(j,len(a)):
-            total+=a[j]
-    print(total)
+    for j in range(3):
+        total+=i[j]
     if total <= M:
         new_list.append(total)
+new_list.sort()
+print(new_list[-1])
 
-print(new_list)
+
