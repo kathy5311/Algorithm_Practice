@@ -98,3 +98,6 @@ a = list(map(str,sys.stdin.readline()))
 if ((a*n_0)+b) <= c*n_0 and (c>=a):
 이 문장을 간단히 한다고 
 (a-c)n_0<=b라고 쓰면 runtime error 발생함!!!!
+
+#2798
+브루트포스에는 itertools에서 순열,조합 이용하자
