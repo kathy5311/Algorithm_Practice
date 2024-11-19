@@ -15,15 +15,16 @@ print(round((sum_num/len_num)))
 print(num_list[len(num_list)//2])
 #최빈값
 cnt = Counter(num_list)
-a,b=max(cnt.items())
+_,b=max(cnt.items())
 bin_list=[]
 for i,j in cnt.items():
     if j == b:
         bin_list.append(i)
 bin_list.sort()
-if len(bin_list)<2:
-    print(bin_list[0])
-else:
+print(bin_list)
+if len(bin_list)>=2:
     print(bin_list[1])
+else:
+    print(bin_list[0])
 #범위
 print(max(num_list)-min(num_list))
