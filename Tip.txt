@@ -176,3 +176,8 @@ deque.rotate() 이용하는 것이 훨씬 빠르다
 
 #factorial
 math import 쓰는게 가장 시간이 빠르다
+
+#20920
+sorted는 다중 조건을 설정하여 정렬할 수 있다.
+a=sorted(word_dict.items(), key=lambda x :(-x[1], -len(x[0]),x[0]))
+또한 숫자형의 경우, '-'를 붙여주면 각각의 조건마다 reverse조건을 추가해주는 꼴이다.
