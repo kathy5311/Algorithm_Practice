@@ -15,7 +15,6 @@ def solution(progresses, speeds):
     answer=[]
     while queue:
         if len(queue)==1:
-            answer.append(count)
             return answer
         curr = queue.popleft()
         if curr >= queue[0]:
@@ -24,7 +23,7 @@ def solution(progresses, speeds):
         elif curr < queue[0]:
             answer.append(count)
             count=1
-
+        answer.append(count)
 
 progresses=list(map(int, sys.stdin.readline().split()))
 speeds = list(map(int,sys.stdin.readline().split()))

@@ -5,22 +5,22 @@ cols = [0]*N
 count=0
 
 def check(row,col):
-    for i in range(row): #i=row, cols[i]=col
-        if (cols[i]==col) or (abs(cols[i]-col)==abs(i-row)):
+    for i in range(col): #i=col, cols[i]=row
+        if (cols[i]==row) or (abs(cols[i]-row)==abs(i-col)):
             return False
     return True 
     
-def queen(row):
+def queen(col):
     global count
-    if row == N:
+    if col == N:
         count+=1
         return count
     
-    for col in range(N):
+    for row in range(N):
         if check(row,col):
-            cols[row]=col
-            queen(row+1)
-            cols[row]=0
+            cols[col]=row
+            queen(col+1)
+            cols[col]=0
 queen(0)
 print(count)
 

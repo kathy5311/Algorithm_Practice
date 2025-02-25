@@ -20,10 +20,4 @@ def solution(name):
 
     return answer
 
-
-        
-    
-
-
-    return answer
 print(solution(name))
