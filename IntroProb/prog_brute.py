@@ -27,4 +27,4 @@ def solution(numbers):
         if find_sosu(number):
             answer+=1
     return answer
-print(solution("17"))
+print(solution("011"))
