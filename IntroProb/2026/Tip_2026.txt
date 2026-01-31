@@ -1,0 +1,3 @@
+#stack_prog1: 기능개발
+-> math.ceil(): 올림계산 기능 
+ex. math.ceil(2.3)=3, math.ceil(2)=2
