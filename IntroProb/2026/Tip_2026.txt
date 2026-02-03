@@ -1,3 +1,10 @@
 #stack_prog1: 기능개발
 -> math.ceil(): 올림계산 기능 
 ex. math.ceil(2.3)=3, math.ceil(2)=2
+
+#stack_prog3: 프로세스
+-> pairs = deque((i,p) for i,p in enumerate(priorities))
+-> idx, p = pairs.popleft()
+-> 인자 2개로 받는거 잊지 않기!
+-> any(prior<p for _,p in pairs)
+-> any: 하나라도 조건에 맞으면 True
